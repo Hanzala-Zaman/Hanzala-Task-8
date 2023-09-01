@@ -1,0 +1,40 @@
+.container
+{
+   
+   margin-top: 10px;
+}
+.card-img-top
+{
+width: 500px;
+}
+.blog-text
+{
+    width: 622px;
+    height: 415px;
+    position: absolute;
+    margin-top: -340px;
+    margin-left: 530px;
+}
+.comments-section
+{
+margin-left: 117px;
+}
+button1
+{
+    
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.submit
+{
+    width: 50px;
+}
+.like-dislike
+{
+    width: 160px;
+    position: absolute;
+    top: 575px;
+    left: 339px;
+}

@@ -1,0 +1,29 @@
+<button  class="btn btn-primary" [routerLink]=''>Home</button>
+<div class="container">
+  <div class="row-1">
+    <div class="col-6 mb-4">
+      <h3>My Blog List</h3>
+      <label for="category">Show by Category:</label> &nbsp;
+      <select id="category" [(ngModel)]="selectedCategory" (change)="filterPosts()">
+        <option value="">All</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+      &nbsp;
+     
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let post of (selectedCategory) ? filteredPosts : postsData"
+         class="col-md-4">
+      <div class="blog" style="width: 18rem;">
+        <img [src]="post.image" class="card-img-top">
+        <div class="blog-body">
+          <h5 class="blog-title">{{ post.title }}</h5>
+          <p class="blog-text">{{ post.excerpt }}</p>
+          <p>Author: {{ post.author }} </p>
+          <a  [routerLink]="['/post', post.id]">Read More... </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

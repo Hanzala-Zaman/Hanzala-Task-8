@@ -1,0 +1,26 @@
+.container
+{
+   justify-content: space-between;
+   /* border: 2px solid lightgrey; */
+   padding: 35px;
+   margin-top: 60px;
+   margin-left: 13%;
+}
+.card-img-top
+{
+    width: 220px;
+    height: 150px;
+}
+.blog-body
+{
+    background-color: whitesmoke;
+    width: 220px;
+}
+button
+{
+    
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
